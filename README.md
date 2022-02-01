@@ -18,7 +18,9 @@ This project is made using Next.js running on Node.js, so you'll need Node.js an
 - A secure way to store private credentials
 
 ## To run this project
-1. Navigate to inside this directory and run `npm run dev`. It should install Next-js and run the server on `localhost:3000`.
+1. Run `npm install` 
+1. Navigate to inside this directory and run `npm run dev`. It should then run the server on `localhost:3000`.
+1. If it doesn't install properly, the manual installation instructions are here: https://nextjs.org/docs/getting-started#manual-setup
 
 ## Good luck!
 If you run out of time, sketch out your proposed solution so we can discuss your approach. We'd rather explore that than get too caught up in the specific implementation details.
