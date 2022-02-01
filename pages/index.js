@@ -6,6 +6,8 @@ export default function Home() {
       <Head>
         <title>Parallo</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/main.min.css" />
+        <link rel="stylesheet" href="/theme-overrides.min.css" />
       </Head>
 
       <main>
