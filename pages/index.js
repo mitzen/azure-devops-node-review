@@ -6,47 +6,49 @@ export default function Home() {
       <Head>
         <title>Parallo</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="/main.min.css" />
+        <link rel="stylesheet" href="/theme-overrides.min.css" />
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to the Parallo DevOps interview exercise!
-        </h1>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+        <div class="banner-content-wrapper">
+          <h1 className="section-header">
+            Welcome to the Parallo DevOps interview exercise!
+          </h1>
         </div>
-      </main>
+        <div className="description">
+          <p>
+            This is a short exercise for you to show us your DevOps skillset. You are free to use this repository as you wish, alternatively you may clone this repo to another source code repository if you prefer. This project is made using Next.js running on Node.js, so you'll need Node.js and Next.js installed.
+          </p>
+        </div>
+        <div>
+          <h4>
+            For this exercise, things you may need are:          </h4>
+          <ol>
+            <li>Docker</li>
+            <li>Account with a cloud provider</li>
+            <li>Git and/or a Git client of your choice</li>
+            <li>Nodejs and npm</li>
+          </ol>
+          <h4>
+            When you finish, you will have:
+          </h4>
+          <ol>
+            <li>A containerised app</li>
+            <li>A deployment pipeline</li>
+            <li>A container deployed to resources in a public cloud</li>
+            <li>Infrastructure as Code templates</li>
+            <li>A secure way to store private credentials</li>
+          </ol>
+        </div>
+        <div className="description">
+          <h1 className="section-header">
+            Good luck!
+          </h1>
+          <p>If you run out of time, sketch out your proposed solution so we can discuss your approach. We'd rather explore that than get too caught up in the specific implementation details.
+          </p>
+        </div>
+      </main >
 
       <footer>
       </footer>
@@ -94,6 +96,13 @@ export default function Home() {
           text-decoration: none;
         }
 
+        p, h1 {
+          text-align: center;
+        }
+        h1,h4 {
+          padding: 2rem;
+        }
+
         .title a {
           color: #0070f3;
           text-decoration: none;
@@ -119,6 +128,7 @@ export default function Home() {
         .description {
           line-height: 1.5;
           font-size: 1.5rem;
+          padding: 1rem;
         }
 
         code {
@@ -196,6 +206,6 @@ export default function Home() {
           box-sizing: border-box;
         }
       `}</style>
-    </div>
+    </div >
   )
 }
