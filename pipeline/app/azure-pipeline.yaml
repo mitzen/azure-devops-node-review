@@ -1,0 +1,15 @@
+name: $(BuildDefinitionName)-$(Rev:.r)
+
+trigger:
+  - main  
+
+stages:
+  - template: templates/build.yaml
+    parameters: 
+      codeAbsolutePath: '$(Build.SourcesDirectory)/src' 
+  # build image # 
+  - template: templates/build-image.yaml
+    parameters: 
+      imageName: $(Build.BuildNumber)
+  
+  

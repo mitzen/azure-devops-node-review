@@ -1,0 +1,29 @@
+parameters:
+ - name: codeAbsolutePath
+   displayName: ImageName
+   type: string
+   default: ''
+
+ - stage: Build
+   displayName: Build stage
+
+   jobs:
+    - job: Build
+      displayName: Build App
+      steps:
+      - task: UseNode@1
+        inputs:
+          version: '16.x'
+          checkLatest: true
+          
+      - script: | 
+          cd ${{ parameters.codeAbsolutePath }}
+          yarn install 
+          yarn test
+        displayName: 'Run tests'
+      
+      # - script: | 
+      #     cd ${{ parameters.codeAbsolutePath }}
+      #     yarn install --frozen-lockfile
+      #     yarn test
+      #   displayName: 'Run tests'
